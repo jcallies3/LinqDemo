@@ -25,7 +25,13 @@ Console.Clear();
 // }
 
 // skip first 5 chars
-foreach (Character character in characters.Skip(5))
+// foreach (Character character in characters.Skip(5))
+// {
+//     Console.WriteLine(character.Display());
+// }
+
+// display characters 6-10
+foreach (Character character in characters.Skip(5).Take(5))
 {
     Console.WriteLine(character.Display());
 }
