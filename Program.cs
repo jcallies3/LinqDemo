@@ -19,7 +19,13 @@ Console.Clear();
 // Console.WriteLine(characters.First().Display());
 
 // display the first 5 characters
-foreach(Character character in characters.Take(5))
+// foreach(Character character in characters.Take(5))
+// {
+//   Console.WriteLine(character.Display());
+// }
+
+// skip first 5 chars
+foreach (Character character in characters.Skip(5))
 {
-  Console.WriteLine(character.Display());
+    Console.WriteLine(character.Display());
 }
