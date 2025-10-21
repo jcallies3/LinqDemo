@@ -1,0 +1,15 @@
+C:\Users\jcallies3\LinqDemo\bin\Debug\net8.0\LinqDemo.exe
+C:\Users\jcallies3\LinqDemo\bin\Debug\net8.0\LinqDemo.deps.json
+C:\Users\jcallies3\LinqDemo\bin\Debug\net8.0\LinqDemo.runtimeconfig.json
+C:\Users\jcallies3\LinqDemo\bin\Debug\net8.0\LinqDemo.dll
+C:\Users\jcallies3\LinqDemo\bin\Debug\net8.0\LinqDemo.pdb
+C:\Users\jcallies3\LinqDemo\obj\Debug\net8.0\LinqDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jcallies3\LinqDemo\obj\Debug\net8.0\LinqDemo.AssemblyInfoInputs.cache
+C:\Users\jcallies3\LinqDemo\obj\Debug\net8.0\LinqDemo.AssemblyInfo.cs
+C:\Users\jcallies3\LinqDemo\obj\Debug\net8.0\LinqDemo.csproj.CoreCompileInputs.cache
+C:\Users\jcallies3\LinqDemo\obj\Debug\net8.0\LinqDemo.sourcelink.json
+C:\Users\jcallies3\LinqDemo\obj\Debug\net8.0\LinqDemo.dll
+C:\Users\jcallies3\LinqDemo\obj\Debug\net8.0\refint\LinqDemo.dll
+C:\Users\jcallies3\LinqDemo\obj\Debug\net8.0\LinqDemo.pdb
+C:\Users\jcallies3\LinqDemo\obj\Debug\net8.0\LinqDemo.genruntimeconfig.cache
+C:\Users\jcallies3\LinqDemo\obj\Debug\net8.0\ref\LinqDemo.dll
