@@ -123,9 +123,9 @@ if (noAlias) {
   Console.WriteLine("There are characters with no alias in the Donkey Kong series");
   int charCount = characters.Where(c => c.Alias.Count() == 0 && c.Series.Contains("Donkey Kong")).Count();
   Console.WriteLine(charCount + " characters have no alias");
-  // foreach(var obj in characters.Where(c => c.Alias.Count() == 0 && c.Series.Contains("Donkey Kong"))){
-  //   Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Alias)} - {String.Join(", ", obj.Series)}");
-  // }
+  foreach(var obj in characters.Where(c => c.Alias.Count() == 0 && c.Series.Contains("Donkey Kong"))){
+    Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Alias)} - {String.Join(", ", obj.Series)}");
+  }
 }
 else {
   Console.WriteLine("There are no characters with no alias in the Donkey Kong series");
