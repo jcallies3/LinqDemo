@@ -96,12 +96,15 @@ Console.Clear();
 //   Console.WriteLine($"\t{name}");
 // }
 
-// all characters grouped by year created
-var CharactersByYearCreated = characters.GroupBy(c => c.YearCreated);
-foreach(var characterByYearCreated in CharactersByYearCreated)
-{
-  Console.WriteLine(characterByYearCreated.Key);
-  foreach(var character in characterByYearCreated) {
-    Console.WriteLine($"\t{character.Name}");
-  }
-}
+// // all characters grouped by year created
+// var CharactersByYearCreated = characters.GroupBy(c => c.YearCreated);
+// foreach(var characterByYearCreated in CharactersByYearCreated)
+// {
+//   Console.WriteLine(characterByYearCreated.Key);
+//   foreach(var character in characterByYearCreated) {
+//     Console.WriteLine($"\t{character.Name}");
+//   }
+// }
+
+int charCount = characters.Where(c => c.YearCreated == 1981).Count();
+Console.WriteLine($"There were {charCount} characters created in 1981");
