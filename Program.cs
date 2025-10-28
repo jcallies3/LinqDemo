@@ -106,8 +106,9 @@ Console.Clear();
 //   }
 // }
 
-int charCount = characters.Where(c => c.YearCreated == 1981 && c.Series.Contains("Mario")).Count();
-Console.WriteLine($"There were {charCount} characters in the Mario series created in 1981");
-foreach(string? name in characters.Where(c => c.YearCreated == 1981 && c.Series.Contains("Mario")).Select(c => c.Name)){
-  Console.WriteLine(name);
+int charCount = characters.Where(c => c.YearCreated == 1981 && c.Series.Contains("Donkey Kong")).Count();
+Console.WriteLine($"There were {charCount} characters in the Donkey Kong series created in 1981");
+foreach(var obj in characters.Where(c => c.YearCreated == 1981 && c.Series.Contains("Donkey Kong"))){
+  Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Series)}");
 }
+
