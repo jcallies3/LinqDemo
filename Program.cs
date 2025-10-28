@@ -131,13 +131,16 @@ Console.Clear();
 //   Console.WriteLine("There are no characters with no alias in the Donkey Kong series");
 // }
 
-bool hasAlias = characters.Any(c => c.Alias.Contains("Winter Kong"));
-if (hasAlias){
-  Console.WriteLine("There are character(s) with the alias Winter Kong");
-  foreach(var obj in characters.Where(c => c.Alias.Contains("Winter Kong"))){
-    Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Alias)}");
-  }
-}
-else {
-  Console.WriteLine("There are no characters with the alias Winter Kong");
-}
+// bool hasAlias = characters.Any(c => c.Alias.Contains("Winter Kong"));
+// if (hasAlias){
+//   Console.WriteLine("There are character(s) with the alias Winter Kong");
+//   foreach(var obj in characters.Where(c => c.Alias.Contains("Winter Kong"))){
+//     Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Alias)}");
+//   }
+// }
+// else {
+//   Console.WriteLine("There are no characters with the alias Winter Kong");
+// }
+
+int charCount = characters.Where(c => c.Species.Contains("Kremling")).Count();
+Console.WriteLine(charCount + " characters are the Kremling species");
