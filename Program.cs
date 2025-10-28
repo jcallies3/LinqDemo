@@ -114,3 +114,6 @@ Console.Clear();
 
 int charCount = characters.Where(c => c.FirstAppearance == "Donkey Kong 64").Count();
 Console.WriteLine(charCount + " made their first appearance in Donkey Kong 64");
+foreach(string? name in characters.Where(c => c.FirstAppearance == "Donkey Kong 64").Select(c => c.Name)){
+  Console.WriteLine(name);
+}
