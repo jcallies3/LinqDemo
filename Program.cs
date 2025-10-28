@@ -142,8 +142,11 @@ Console.Clear();
 //   Console.WriteLine("There are no characters with the alias Winter Kong");
 // }
 
-int charCount = characters.Where(c => c.Species.Contains("Kremling")).Count();
-Console.WriteLine(charCount + " characters are the Kremling species");
-foreach(string? name in characters.Where(c => c.Species.Contains("Kremling")).Select(c => c.Name)){
-  Console.WriteLine(name);
-}
+// int charCount = characters.Where(c => c.Species.Contains("Kremling")).Count();
+// Console.WriteLine(charCount + " characters are the Kremling species");
+// foreach(string? name in characters.Where(c => c.Species.Contains("Kremling")).Select(c => c.Name)){
+//   Console.WriteLine(name);
+// }
+
+int charCount = characters.Where(c => c.Species.Contains("Human") && c.Series.Contains("Mario")).Count();
+Console.WriteLine(charCount + " characters are part of the Human species in the Mario series");
