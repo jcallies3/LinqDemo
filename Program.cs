@@ -108,3 +108,6 @@ Console.Clear();
 
 int charCount = characters.Where(c => c.YearCreated == 1981).Count();
 Console.WriteLine($"There were {charCount} characters created in 1981");
+foreach(var obj in characters.Where(c => c.YearCreated == 1981)){
+  Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Series)}");
+}
