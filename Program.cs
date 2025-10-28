@@ -118,15 +118,23 @@ Console.Clear();
 //   Console.WriteLine(name);
 // }
 
-bool noAlias = characters.Any(c => c.Alias.Count() == 0 && c.Series.Contains("Donkey Kong"));
-if (noAlias) {
-  Console.WriteLine("There are characters with no alias in the Donkey Kong series");
-  int charCount = characters.Where(c => c.Alias.Count() == 0 && c.Series.Contains("Donkey Kong")).Count();
-  Console.WriteLine(charCount + " characters have no alias");
-  foreach(var obj in characters.Where(c => c.Alias.Count() == 0 && c.Series.Contains("Donkey Kong"))){
-    Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Alias)} - {String.Join(", ", obj.Series)}");
-  }
+// bool noAlias = characters.Any(c => c.Alias.Count() == 0 && c.Series.Contains("Donkey Kong"));
+// if (noAlias) {
+//   Console.WriteLine("There are characters with no alias in the Donkey Kong series");
+//   int charCount = characters.Where(c => c.Alias.Count() == 0 && c.Series.Contains("Donkey Kong")).Count();
+//   Console.WriteLine(charCount + " characters have no alias");
+//   foreach(var obj in characters.Where(c => c.Alias.Count() == 0 && c.Series.Contains("Donkey Kong"))){
+//     Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Alias)} - {String.Join(", ", obj.Series)}");
+//   }
+// }
+// else {
+//   Console.WriteLine("There are no characters with no alias in the Donkey Kong series");
+// }
+
+bool hasAlias = characters.Any(c => c.Alias.Contains("Snowmad King"));
+if (hasAlias){
+  Console.WriteLine("There are character(s) with the alias Snowmad King");
 }
 else {
-  Console.WriteLine("There are no characters with no alias in the Donkey Kong series");
+  Console.WriteLine("There are no characters with the alias Snowmad King");
 }
