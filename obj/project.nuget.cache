@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "BDIWIYczmlQ=",
+  "dgSpecHash": "YAczHFN50cY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jcallies3\\LinqDemo\\LinqDemo.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\LinqDemo\\LinqDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jccal\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.19\\microsoft.netcore.app.ref.8.0.19.nupkg.sha512",
+    "C:\\Users\\jccal\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.19\\microsoft.windowsdesktop.app.ref.8.0.19.nupkg.sha512",
+    "C:\\Users\\jccal\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.19\\microsoft.aspnetcore.app.ref.8.0.19.nupkg.sha512",
+    "C:\\Users\\jccal\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.19\\microsoft.netcore.app.host.win-x64.8.0.19.nupkg.sha512"
+  ],
   "logs": []
 }
