@@ -144,3 +144,6 @@ Console.Clear();
 
 int charCount = characters.Where(c => c.Species.Contains("Kremling")).Count();
 Console.WriteLine(charCount + " characters are the Kremling species");
+foreach(string? name in characters.Where(c => c.Species.Contains("Kremling")).Select(c => c.Name)){
+  Console.WriteLine(name);
+}
