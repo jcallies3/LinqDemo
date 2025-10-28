@@ -112,8 +112,16 @@ Console.Clear();
 //   Console.WriteLine(name);
 // }
 
-int charCount = characters.Where(c => c.FirstAppearance == "Donkey Kong 64").Count();
-Console.WriteLine(charCount + " made their first appearance in Donkey Kong 64");
-foreach(string? name in characters.Where(c => c.FirstAppearance == "Donkey Kong 64").Select(c => c.Name)){
-  Console.WriteLine(name);
+// int charCount = characters.Where(c => c.FirstAppearance == "Donkey Kong 64").Count();
+// Console.WriteLine(charCount + " made their first appearance in Donkey Kong 64");
+// foreach(string? name in characters.Where(c => c.FirstAppearance == "Donkey Kong 64").Select(c => c.Name)){
+//   Console.WriteLine(name);
+// }
+
+bool noAlias = characters.Any(c => c.Alias.Count() == 0);
+if (noAlias) {
+  Console.WriteLine("There are characters with no alias");
+}
+else {
+  Console.WriteLine("There are no characters with no alias");
 }
