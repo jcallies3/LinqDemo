@@ -148,8 +148,8 @@ Console.Clear();
 //   Console.WriteLine(name);
 // }
 
-int charCount = characters.Where(c => !c.Species.Contains("Koopa") && !c.Species.Contains("Human") && c.Series.Contains("Mario")).Count();
-Console.WriteLine(charCount + " characters are not Human or Koopa species in the Mario series");
-foreach(var obj in characters.Where(c => !c.Species.Contains("Koopa") && !c.Species.Contains("Human") && c.Series.Contains("Mario"))){
+int charCount = characters.Where(c => !c.Species.Contains("Kong") && !c.Species.Contains("Human") && c.Series.Contains("Donkey Kong")).Count();
+Console.WriteLine(charCount + " characters are not Human or Kong species in the Donkey Kong series");
+foreach(var obj in characters.Where(c => !c.Species.Contains("Kong") && !c.Species.Contains("Human") && c.Series.Contains("Donkey Kong"))){
   Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Species)}");
 }
