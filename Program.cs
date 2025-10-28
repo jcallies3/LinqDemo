@@ -134,9 +134,9 @@ Console.Clear();
 bool hasAlias = characters.Any(c => c.Alias.Contains("Winter Kong"));
 if (hasAlias){
   Console.WriteLine("There are character(s) with the alias Winter Kong");
-  // foreach(var obj in characters.Where(c => c.Alias.Contains("Snowmad King"))){
-  //   Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Alias)}");
-  // }
+  foreach(var obj in characters.Where(c => c.Alias.Contains("Winter Kong"))){
+    Console.WriteLine($"{obj.Name} - {String.Join(", ", obj.Alias)}");
+  }
 }
 else {
   Console.WriteLine("There are no characters with the alias Winter Kong");
