@@ -106,9 +106,11 @@ Console.Clear();
 //   }
 // }
 
-int charCount = characters.Where(c => c.YearCreated == 1981 && c.Series.Contains("Donkey Kong")).Count();
-Console.WriteLine($"There were {charCount} characters in the Donkey Kong series created in 1981");
-foreach(string? name in characters.Where(c => c.YearCreated == 1981 && c.Series.Contains("Donkey Kong")).Select(c => c.Name)){
-  Console.WriteLine(name);
-}
+// int charCount = characters.Where(c => c.YearCreated == 1981 && c.Series.Contains("Donkey Kong")).Count();
+// Console.WriteLine($"There were {charCount} characters in the Donkey Kong series created in 1981");
+// foreach(string? name in characters.Where(c => c.YearCreated == 1981 && c.Series.Contains("Donkey Kong")).Select(c => c.Name)){
+//   Console.WriteLine(name);
+// }
 
+int charCount = characters.Where(c => c.FirstAppearance == "Donkey Kong 64").Count();
+Console.WriteLine(charCount + " made their first appearance in Donkey Kong 64");
