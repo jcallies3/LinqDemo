@@ -121,6 +121,8 @@ Console.Clear();
 bool noAlias = characters.Any(c => c.Alias.Count() == 0);
 if (noAlias) {
   Console.WriteLine("There are characters with no alias");
+  int charCount = characters.Where(c => c.Alias.Count() == 0).Count();
+  Console.WriteLine(charCount + " characters have no alias");
 }
 else {
   Console.WriteLine("There are no characters with no alias");
